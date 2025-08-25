@@ -1,0 +1,40 @@
+{
+  "name": "kaffeekasse",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev --turbopack -p 9283",
+    "build": "next build",
+    "start": "next start -p 9283",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "better-sqlite3": "^11.8.0",
+    "bootstrap": "^5.3.3",
+    "dotenv": "^16.4.7",
+    "fetch": "^1.1.0",
+    "formidable": "^3.5.2",
+    "html-to-text": "^9.0.5",
+    "jspdf": "^2.5.2",
+    "jspdf-autotable": "^3.8.4",
+    "next": "15.1.4",
+    "node-fetch": "^3.3.2",
+    "nodemailer": "^6.10.0",
+    "qrcode": "^1.5.4",
+    "qrcode.react": "^4.2.0",
+    "react": "^19.0.0",
+    "react-bootstrap": "^2.10.7",
+    "react-dom": "^19.0.0",
+    "react-icons": "^5.4.0",
+    "sass": "^1.85.0",
+    "sqlite": "^5.1.1",
+    "sqlite3": "^5.1.7",
+    "tls": "^0.0.1",
+    "uuidv4": "^6.2.13"
+  },
+  "devDependencies": {
+    "@eslint/eslintrc": "^3",
+    "eslint": "^9",
+    "eslint-config-next": "15.1.4"
+  }
+}

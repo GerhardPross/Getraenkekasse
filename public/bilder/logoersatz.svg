@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="600" viewBox="0 0 1200 600" role="img" aria-label="Platzhalter: hier könnte dein logo sein">
+  <title>Hier könnte dein Logo sein</title>
+  <desc>Ein neutraler Platzhalter mit gestricheltem Rahmen und mittig gesetztem Text.</desc>
+  <defs>
+    <style type="text/css"><![CDATA[
+      .frame { fill: #f7f7f7; stroke: #9aa0a6; stroke-width: 4; stroke-dasharray: 14 12; }
+      .text { fill: #202124; font-family: system-ui, -apple-system, "Segoe UI", Roboto, Inter, Arial, sans-serif; font-weight: 700; letter-spacing: 0.6px; }
+      @media (prefers-color-scheme: dark) {
+        .frame { fill: #1a1a1a; stroke: #5f6368; }
+        .text { fill: #e8eaed; }
+      }
+    ]]></style>
+    <!-- Subtle gradient sheen -->
+    <linearGradient id="sheen" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0.65"/>
+      <stop offset="1" stop-color="#ffffff" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background frame -->
+  <rect class="frame" x="12" y="12" width="1176" height="576" rx="28" ry="28"/>
+
+  <!-- Light sheen -->
+  <rect x="12" y="12" width="1176" height="180" rx="28" ry="28" fill="url(#sheen)" opacity="0.25"/>
+
+  <!-- Centered text -->
+  <g transform="translate(600,300)">
+    <text class="text" text-anchor="middle" dominant-baseline="middle" font-size="56">
+      hier könnte dein logo sein
+    </text>
+  </g>
+</svg>

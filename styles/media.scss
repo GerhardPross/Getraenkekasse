@@ -1,0 +1,11 @@
+$grid-breakpoints: (
+  xs: 0,       // sehr klein
+  sm: 574px,   // mobile Geräte
+  md: 768px,   // Tablets
+  lg: 1024px,  // kleine Desktops
+  xl: 1280px   // große Desktops
+);
+
+@import "~bootstrap/scss/bootstrap";
+
+

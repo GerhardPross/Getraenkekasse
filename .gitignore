@@ -1,0 +1,19 @@
+# Dependencies
+node_modules
+
+# Environment variables
+.env
+.env.local
+.env.development.local
+
+# Next.js build output
+.next
+/.next
+
+# OS generated files
+.DS_Store
+public/.DS_Store
+public/bilder/.DS_Store
+
+# Build artifacts
+.next/build-manifest.json
