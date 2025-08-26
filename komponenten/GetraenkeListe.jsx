@@ -278,10 +278,10 @@ export default function GetraenkeListe() {
                 </div>
             )}
 
-            <div className="row row-cols-3 row-cols-md-4 row-cols-lg-5">
+            <div className="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5 g-3">
                 {getraenke.map((getraenk) => (
-                    <div className="col d-flex justify-content-center mt-3" key={getraenk.id}>
-                        <Card style={{ width: "20vw", height: "30vw" }} className="card-hover-container">
+                    <div className="col d-flex justify-content-center" key={getraenk.id}>
+                        <Card className="card-hover-container h-100 w-100">
                             {admin && (
                             <div className="card-hover-icons">
                                 <FaEdit style={{ cursor: "pointer", color: "blue" }} title="Bearbeiten" type="submit"
@@ -302,13 +302,13 @@ export default function GetraenkeListe() {
                                 <FaTrash style={{ cursor: "pointer", color: "red" }} title="Löschen" type="submit" onClick={() => handleDelete(getraenk.id)} />
                             </div >
                             )}
-                            <div className="card-img-container justify-content-center align-items-center d-flex w-100 h-60">
+                            <div className="card-img-container justify-content-center align-items-center d-flex w-100">
                                 <Link href={`/?${getraenk.id}`} passHref onClick={() => window.location.reload()}>
-                                    <Card.Img className="w-100 h-100" style={{  objectFit: 'contain' }} variant="top" src={getraenk.bild} alt={getraenk.name} />
+                                    <Card.Img className="w-100 h-100" style={{  objectFit: 'contain', minHeight: '200px' }} variant="top" src={getraenk.bild} alt={getraenk.name} />
                                 </Link>
                             </div>
-                            <Card.Body>
-                                        <Card.Title className="text-center " style={{ fontSize: "2vw", fontWeight: "bold", marginTop: "-10px"}}>
+                            <Card.Body className="d-flex flex-column">
+                                        <Card.Title className="text-center flex-grow-1" style={{ fontSize: "clamp(0.8rem, 2vw, 1.2rem)", fontWeight: "bold" }}>
                                             <div> {getraenk.name} </div>
                                             <div> {getraenk.preis.toFixed(2)} € </div>
                                         </Card.Title>
@@ -345,9 +345,9 @@ export default function GetraenkeListe() {
 
             <br />
             {admin && (
-            <div className="row row-cols-3">
-                <div className="mt-3 col">
-                    <Card className="card-hover-container" style={{ width: "20vw", height: "30vw" }}>
+            <div className="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5 g-3">
+                <div className="col d-flex justify-content-center">
+                    <Card className="card-hover-container h-100 w-100">
                         <Button className="btn btn-light rounded-0 mx-0 my-0 px-0 py-0 " onClick={() => setLgShow(true)}>
                             <Card.Img className="rounded-0 rounded-top" variant="top" src='/bilder/Plus.webp' alt="Plus" />
                         </Button>
@@ -358,8 +358,8 @@ export default function GetraenkeListe() {
                         </Card.Body>
                     </Card>
                 </div>
-                <div className="mt-3 col">
-                    <Card className="card-hover-container" style={{ width: "20vw", height: "30vw" }}>
+                <div className="col d-flex justify-content-center">
+                    <Card className="card-hover-container h-100 w-100">
                         <Button className="btn btn-light rounded-0 mx-0 my-0 px-0 py-0 " onClick={() => window.print()}>
                             <Card.Img className="rounded-0 rounded-top" variant="top" src='/bilder/PDF.webp' alt="PDF" />
                         </Button>

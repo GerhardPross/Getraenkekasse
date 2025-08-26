@@ -13,7 +13,12 @@ export default function Header() {
           alt="Logo" 
           width={500} 
           height={100} 
-          style={{ padding: '10px' }}
+          className='img-fluid'
+          style={{ 
+            maxWidth: 'min(200px, 40vw)',
+            height: 'auto',
+            padding: '10px'
+          }}
         />
       </div>
       <div className='d-flex justify-content-center align-items-center mr-5'>
